@@ -10,8 +10,47 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* header */
-/* section-1 */
+/* ======================== COMPONENTS ======================== */
+.modal-btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.modal-btn:hover .modal-btn:focus {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+}
+
+.services {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.descriprion {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* ======================== /COMPONENTS ======================== */
+/* ======================== HEADER ======================== */
 .logo {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -49,10 +88,11 @@ body {
     color: #2E2F42;
 }
 
-.menu-link :hover
-.menu-link :focus {
-    
+.menu-link:hover .menu-link:focus {
+    color: #404BBF;
+    ;
 }
+
 
 
 .contact-info {
@@ -64,7 +104,11 @@ body {
     color: #434455;
 }
 
+.contact-info :hover .contact-info :focus {
+    color: #404BBF;
+}
 
+/* ======================== HERO ======================== */
 .headline {
     font-style: normal;
     font-weight: 700;
@@ -75,39 +119,9 @@ body {
     color: #D9D9D9;
 }
 
-.modal-btn {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    color: #FFFFFF;
+/* ======================== OUR GROUNDS ======================== */
 
-}
-
-.basics {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-
-.basics-list {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-
-    letter-spacing: 0.02em;
-
-    color: #434455;
-}
-
+/* ======================== WHAT ARE WE DOING ======================== */
 .avocation {
     font-style: normal;
     font-weight: 700;
@@ -119,6 +133,7 @@ body {
     color: #2E2F42;
 }
 
+/* ======================== OUR TEAM ======================== */
 .our-team {
     font-style: normal;
     font-weight: 700;
@@ -130,8 +145,7 @@ body {
     color: #2E2F42;
 }
 
-
-.staff-member {
+.suptitle {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -141,25 +155,34 @@ body {
     color: #2E2F42;
 }
 
-.staff-list {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-/* footer */
-
-
+/* ======================== FOOTER ======================== */
 
 .footer-list {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
+}
+
+/* ====================== PORTFOLIO ======================*/
+
+.app-buttons {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+}
+
+.app-buttons :hover :focus {
+    background: #404BBF;
+    color: #FFFFFF;
+
 }
