@@ -49,6 +49,12 @@ body {
     color: #2E2F42;
 }
 
+.menu-link :hover
+.menu-link :focus {
+    
+}
+
+
 .contact-info {
     font-style: normal;
     font-weight: 400;
