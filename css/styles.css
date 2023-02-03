@@ -1,3 +1,9 @@
+:root {
+    --subtitle-fonts: #2E2F42;
+    --description-fonts: #434455;
+    --background-accent-color: #404BBF;
+}
+
 .list {
     list-style: none;
 }
@@ -8,45 +14,49 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #2E2F42;
 }
+
 
 /* ======================== COMPONENTS ======================== */
 .modal-btn {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-}
-
-.modal-btn:hover .modal-btn:focus {
+    cursor: pinter;
     background-color: #4D5AE5;
     color: #FFFFFF;
 }
 
-.services {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+.modal-btn:hover {
+    background-color: var(--background-accent-color)
+}
+
+.modal-btn:focus {
+    background-color: var(--background-accent-color)
+}
+
+.subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--subtitle-fonts)
 }
 
 .descriprion {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--description-fonts)
+}
+
+.text-align {
+    text-align: center;
 }
 
 /* ======================== /COMPONENTS ======================== */
@@ -80,7 +90,6 @@ body {
 
 
 .menu-link {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -88,15 +97,19 @@ body {
     color: #2E2F42;
 }
 
-.menu-link:hover .menu-link:focus {
+.menu-link:hover {
     color: #404BBF;
-    ;
+    border-bottom: #404BBF;
+    border-radius: 222px;
 }
 
-
+.menu-link:focus {
+    color: #404BBF;
+    border-bottom: #404BBF;
+    border-radius: 222px;
+}
 
 .contact-info {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -104,13 +117,16 @@ body {
     color: #434455;
 }
 
-.contact-info :hover .contact-info :focus {
+.contact-info:hover {
+    color: #404BBF;
+}
+
+.contact-info:focus {
     color: #404BBF;
 }
 
 /* ======================== HERO ======================== */
 .headline {
-    font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.08;
@@ -123,7 +139,6 @@ body {
 
 /* ======================== WHAT ARE WE DOING ======================== */
 .avocation {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -135,7 +150,6 @@ body {
 
 /* ======================== OUR TEAM ======================== */
 .our-team {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -145,20 +159,9 @@ body {
     color: #2E2F42;
 }
 
-.suptitle {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-
 /* ======================== FOOTER ======================== */
 
 .footer-list {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -166,23 +169,42 @@ body {
     color: #E7E9FC;
 }
 
-/* ====================== PORTFOLIO ======================*/
+.logo-white {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F4F4FD;
+}
+
 
 .app-buttons {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
+    background-color:#F4F4FD;
     color: #4D5AE5;
 }
 
-.app-buttons :hover :focus {
-    background: #404BBF;
+.app-buttons:hover {
+    background-color: #404BBF;
     color: #FFFFFF;
+}
 
+.app-buttons:focus {
+    background-color: #404BBF;
+    color: #FFFFFF;
+}
+
+.hide {
+    opacity: 0;
 }
