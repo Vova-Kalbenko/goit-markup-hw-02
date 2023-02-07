@@ -140,6 +140,7 @@ body {
 .menu-item:not(:last-child) {
     margin-right: 40px;
 }
+
 .contact-info {
     font-size: 16px;
     line-height: 1.5;
@@ -184,6 +185,7 @@ body {
 }
 /* ======================== OUR GROUNDS ======================== */
 
+
 /* ======================== WHAT ARE WE DOING ======================== */
 
 .title {
@@ -194,6 +196,10 @@ body {
     text-transform: capitalize;
     color: #2E2F42;
     margin-bottom: 72px;
+}
+
+.services-card {
+    flex-basis: calc((100% - 48) / 3);
 }
 
 /* ======================== OUR TEAM ======================== */
@@ -209,7 +215,12 @@ body {
 .display-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;  
+    gap: 24px;
+}
+.card-content-wrapper {
+    padding-top: 32px;
+    border: 1px solid;
+    border-top: none;
 }
 
 /* ======================== FOOTER ======================== */
@@ -255,4 +266,10 @@ body {
 
 .visually-hidden {
     visibility: hidden;
+}
+.portfilio-section {
+    padding-bottom: 120px;
+}
+.portfolio-display-flex {
+    row-gap: 48px;
 }
