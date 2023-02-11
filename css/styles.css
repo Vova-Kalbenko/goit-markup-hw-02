@@ -86,9 +86,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--description-fonts)
 }
-.description-cards {
-    margin-bottom: 32px;
-}
+
 
 .text-align {
     text-align: center;
@@ -139,6 +137,7 @@ body {
 .menu {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .menu-link {
@@ -196,6 +195,9 @@ body {
     display: flex;
 }
 
+.services-item:not(:last-child) {
+    margin-right: 24px;
+}
 /* ======================== HERO ======================== */
 
 .headline {
@@ -251,6 +253,8 @@ body {
     padding-top: 32px;
     border: 1px solid #F4F4FD;
     border-top: none;
+    padding-left: 16px;
+    padding-bottom: 21px;
 
 }
 .card-background-color {
@@ -296,7 +300,6 @@ body {
     background-color: #F4F4FD;
     color: #4D5AE5;
     border: none;
-    margin-bottom: 72px;
     padding: 12px 24px 12px 24px;
 }
 
@@ -311,24 +314,27 @@ body {
 }
 
 .visually-hidden {
-    visibility: hidden;
-}
+    position: absolute;
+    white-space: nowrap;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    border:0;
+    padding:0;
+    clip:rect(0 0 0 0);
+    clip-path:inset(50%);
+    margin: -1px;
+    }
 
 .portfilio-section {
-    padding-bottom: 120px;
+    padding-top: 72px;
+    padding-bottom: 96px;
 }
 
 .portfolio-display-flex {
     row-gap: 48px;
 }
 
-.services-item:not(:last-child) {
-    margin-right: 24px;
-}
-.portfolio-margin {
-    margin-top: 96px;
-    margin-left: 271px;
-}
-.portfolio-margin-left {
-    margin-left: 16px;
+.portfolio-padding { 
+    padding-top: 72px;
 }
